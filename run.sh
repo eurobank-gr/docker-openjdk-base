@@ -19,7 +19,7 @@ DEFAULT_JAVA_OPTIONS="-XshowSettings \
  -Duser.dir=/tmp "
 
 RUN_ARGS=$DEFAULT_JAVA_OPTIONS
-if [ ! -z $JAVA_OPTIONS ]; then
+if [ ! -z "$JAVA_OPTIONS" ]; then
  RUN_ARGS=$JAVA_OPTIONS
 fi
 
