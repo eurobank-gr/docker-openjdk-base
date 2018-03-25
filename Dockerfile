@@ -1,6 +1,9 @@
-FROM openjdk:slim
+FROM openjdk:8u162-slim
+
 WORKDIR /tmp
-ADD run.sh /run.sh
-RUN chmod +x /run.sh
-ENTRYPOINT ["/run.sh"]
-CMD ["-version"]
+
+COPY run-java.sh /
+RUN chmod 755 /run-java.sh
+
+ENTRYPOINT ["/run-java.sh"]
+CMD ["options"]
