@@ -1,4 +1,4 @@
-FROM openjdk:8u162-slim
+FROM openjdk:8u171-slim
 
 WORKDIR /tmp
 
