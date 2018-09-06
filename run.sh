@@ -23,4 +23,5 @@ if [ ! -z $JAVA_OPTIONS ]; then
  RUN_ARGS=$JAVA_OPTIONS
 fi
 
-java $RUN_ARGS $@
+echo "java $RUN_ARGS $@"
+exec java $RUN_ARGS $@
